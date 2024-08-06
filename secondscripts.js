@@ -1,3 +1,4 @@
+// Gathers data to populate Info page for plants
 $(document).ready(function() {
   const pageBackground = document.getElementById("pageBackground");
 
@@ -5,9 +6,6 @@ $(document).ready(function() {
   const stateName = params.get('state');
   const plantName = params.get('plant');
   const category = params.get('category');
-  // console.log(stateName);
-  // console.log(plantName);
-  // console.log(category);
 
   fetch('onestate.json')
     .then(response => response.json())
